@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply plugin:'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation project(path: ':infobean')
+    implementation project(path: ':utils')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //3.Recyclerview 的依赖包
+    api "com.android.support:design:$design"
+
+//4.加载图片的依赖包
+    api "com.github.bumptech.glide:glide:$glide"
+    //2. retrofit依赖
+    api "com.squareup.retrofit2:retrofit:$retrofit"//Retrofit依赖
+    api "com.squareup.retrofit2:converter-gson:$convertergson" // 可选依赖，解析json字符所用
+//2.5 retrofit支持Rxjava使用
+    api "com.squareup.retrofit2:adapter-rxjava2:$adapterrxjava2" // 必要依赖，和Rxjava结合必须用到，下面会提到
+//3. RxJava依赖
+    api "io.reactivex.rxjava2:rxjava:$rxjava" // 必要rxjava2依赖
+    api "io.reactivex.rxjava2:rxandroid:$rxandroid" // 必要rxandrroid依赖，切线程时需要用到
+
+    api "com.squareup.okhttp3:okhttp:$okhttp3"
+    api "com.squareup.okhttp3:logging-interceptor:$ok3log"
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
