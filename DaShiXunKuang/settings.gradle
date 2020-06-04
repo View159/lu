@@ -1,4 +1,0 @@
-include ':infobean'
-include ':mvp'
-include ':app'
-rootProject.name = "DaShiXunKuang"
