@@ -34,3 +34,12 @@
 |秦宇|复用fragment与空间slideingTablayout等方便完成操作|完成|无|https://github.com/qy1207?tab=repositories|
 |张扬|复用fragment与空间slideingTablayout等方便完成操作|完成|无| https://github.com/zhangyang19950505?tab=repositories|
 |程琨|复用fragment与空间slideingTablayout等方便完成操作|完成|无|https://github.com/ChengKuns?tab=repositories|
+#06.10（星期三）
+
+| 姓名   | 笔记完成内容                                                 | 录音完成内容 | 遇到的问题                                         | 地址                                                 |
+| :----- | ------------------------------------------------------------ | ------------ | -------------------------------------------------- | ---------------------------------------------------- |
+|陈龙|防抖动时间与点击关注发送对应的请求到服务器让服务器更改,账号的uid与之关联|完成|无|https://github.com/IFragments?tab=repositories|
+|熊国杰|防抖动时间与点击关注发送对应的请求到服务器让服务器更改,账号的uid与之关联|完成|无|https://github.com/xb19960925?tab=repositories|
+|秦宇|防抖动时间与点击关注发送对应的请求到服务器让服务器更改,账号的uid与之关联|完成|无|https://github.com/qy1207?tab=repositories|
+|张扬|防抖动时间与点击关注发送对应的请求到服务器让服务器更改,账号的uid与之关联|完成|json原生解析基础弱| https://github.com/zhangyang19950505?tab=repositories|
+|程琨|防抖动时间与点击关注发送对应的请求到服务器让服务器更改,账号的uid与之关联|完成|页面跳转逻辑难捋|https://github.com/ChengKuns?tab=repositories|
